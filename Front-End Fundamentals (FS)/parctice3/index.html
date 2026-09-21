@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Grade Manager</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Student Grade Manager</h1>
+
+      <!-- Add Student -->
+      <div class="form">
+        <div>
+          <label for="nameInput">Student Name</label>
+          <input type="text" id="nameInput" placeholder="Enter student name" />
+        </div>
+
+        <div>
+          <label for="scoreInput">Score</label>
+          <input
+            type="number"
+            id="scoreInput"
+            placeholder="Enter score"
+            min="0"
+            max="100"
+          />
+        </div>
+
+        <button id="addBtn">Add Student</button>
+      </div>
+      <div class="search">
+        <input
+          type="text"
+          placeholder="Search.."
+          id="searchInput"
+          name="search"
+          style="width: 450px"
+        />
+        <button id="clearBtn" type="clear">Clear All</button>
+      </div>
+      <!-- Students Table -->
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Score</th>
+            <th>Grade</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
